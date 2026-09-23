@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aaruvi Builds — Logout 01</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene">
+    <div class="series-label">AARUVI BUILDS</div>
+
+    <section class="window" id="window">
+      <header class="nav">
+        <div class="identity">
+          <div class="logo">A</div>
+          <div class="identity-copy">
+            <span>Workspace</span>
+            <strong>Studio</strong>
+          </div>
+        </div>
+
+        <button class="logout" id="logout" aria-label="Logout">
+          <span class="logout-text">Logout</span>
+          <span class="mini-exit" aria-hidden="true">
+            <span class="mini-door"></span>
+            <span class="mini-handle"></span>
+            <span class="mini-arrow">→</span>
+          </span>
+        </button>
+      </header>
+
+      <div class="dashboard" id="dashboard">
+        <div class="welcome">
+          <div class="avatar">YP</div>
+          <div>
+            <span class="kicker">Welcome back</span>
+            <h1>Good to see you.</h1>
+          </div>
+        </div>
+
+        <div class="cards">
+          <article class="card card-main" style="--i:0">
+            <span class="kicker">Projects</span>
+            <strong>08</strong>
+            <small>active projects</small>
+          </article>
+
+          <article class="card" style="--i:1">
+            <span class="kicker">Activity</span>
+            <div class="metric"><i></i> Online</div>
+            <small>last active just now</small>
+          </article>
+
+          <article class="card" style="--i:2">
+            <span class="kicker">Session</span>
+            <strong class="time">02:48</strong>
+            <small>hours active</small>
+          </article>
+        </div>
+      </div>
+
+      <div class="exit-layer" id="exitLayer" aria-hidden="true">
+        <div class="exit-copy">
+          <span class="kicker">Session ended</span>
+          <h2>See you<br><em>next time.</em></h2>
+        </div>
+
+        <div class="exit-door" aria-hidden="true">
+          <div class="door-frame"></div>
+          <div class="door-panel">
+            <span class="door-dot"></span>
+          </div>
+          <span class="door-arrow">→</span>
+        </div>
+      </div>
+
+      <div class="signed-out" id="signedOut">
+        <span class="kicker">Session ended</span>
+        <h2>Signed out.</h2>
+        <p>Your workspace is secure.</p>
+        <button class="again" id="again" type="button">Enter again</button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
